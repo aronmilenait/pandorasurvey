@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pandora | Survey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Birthstone Bounce' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+</head>
+<body>
+    <header>
+    <h1 id="title">Pandora</h1>
+    <h2 id="subtitle">Survey</h2>
+    </header>
+    <div class="survey">
+    <p id=description>We would like to know which content you want to read in our blog. Can you complete this survey? It will only take you three minutes!</p>
+    <form id="survey-form" method="post" action="https://myblog.com">
+        <fieldset>
+          <label for="name" id="name-label">Enter your first name: <input id="name" name="first-name" type="text" placeholder="John" required /></label>
+          <label for="last-name" id="lastname-label">Enter your last name: <input id="lastname" name="last-name" type="text" placeholder="Smith" required /></label>
+          <label for="email" id="email-label">Enter your email: <input id="email" name="email" type="email" placeholder="johnsmith@gmail.com" required /></label>
+          <label for="number" id="number-label">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" placeholder="21" />
+          <label for="gender" id="gender-label">Select your gender:
+            <input type="radio" name="gender" value="f" class="inline" value="f">Female
+            <input type="radio" name="gender" value="m" class="inline" value="m">Masculine
+            <input type="radio" name="gender" value="o" class="inline" value="o">Other    
+        </label>
+        </fieldset>
+          <fieldset>
+            <label for="referrer">How did you know us?</label>
+            <select id="dropdown" name="referrer">
+                <option value="">(Select one)</option>    
+                <option value="1">Instagram</option>
+                <option value="2">Facebook</option>
+                <option value="3">Another website or blog</option>
+                <option value="4">Familiar or friend</option>
+                <option value="5">Other</option>
+            </select>
+  
+    </label>
+          <label>Which is your favourite gender?</label>
+            <select id="gender" name="gender">
+                <option value="">(Select one)</option>    
+                <option value="shortstory">Short story</option>
+                <option value="poetry">Poetry</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="romance">Romance</option>
+                <option value="other">Other</option>
+            </select>
+
+            <p>What label identifies you the most?</p>
+            <label for="writer">
+              <input id="writer" type="checkbox" class="inline" value="writer"/>Writer
+            </label><label for="reader"><input id="reader" type="checkbox" class="inline" value="reader"/>Reader
+            </label>
+            <br>
+            <label for="about">Tell us more about you:
+              <textarea id="about" name="about" rows="3" cols="30" placeholder="I like reading..."></textarea>
+            </label>   
+            <input type="submit" value="Submit" id="submit" />
+        <br>
+      </form>
+        </fieldset>
+    
+    </div>
+    </body>
+    </html>
